@@ -38,14 +38,32 @@ class BookViewModel : ViewModel() {
 
     fun markAsFinished(bookTitle: String) {
         _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isFinished = true) ?: BookState(isFinished = true)
+        removeFromWishlist(bookTitle)
+        removeFromReading(bookTitle)
     }
 
     fun addToWishlist(bookTitle: String) {
         _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isInWishlist = true) ?: BookState(isInWishlist = true)
+        removeFromFinished(bookTitle)
+        removeFromReading(bookTitle)
     }
 
     fun markAsReading(bookTitle: String) {
         _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isReading = true) ?: BookState(isReading = true)
+        removeFromWishlist(bookTitle)
+        removeFromFinished(bookTitle)
+    }
+
+    fun removeFromFinished(bookTitle: String) {
+        _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isFinished = false) ?: BookState()
+    }
+
+    fun removeFromWishlist(bookTitle: String) {
+        _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isInWishlist = false) ?: BookState()
+    }
+
+    fun removeFromReading(bookTitle: String) {
+        _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isReading = false) ?: BookState()
     }
 }
 

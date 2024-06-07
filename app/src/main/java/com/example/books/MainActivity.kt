@@ -318,24 +318,67 @@ fun DetailScreen(
                     Text(text = "Buy on Amazon")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
-                Button(onClick = {
-                    viewModel.markAsFinished(book.bookTitle)
-                }) {
-                    Text(text = "Mark as Finished")
+
+                if (bookState.isFinished) {
+                    Button(onClick = {
+                        viewModel.removeFromFinished(book.bookTitle)
+                    }) {
+                        Text(text = "Unfinish Book")
+                    }
+                } else {
+                    Button(onClick = {
+                        viewModel.markAsFinished(book.bookTitle)
+                    }) {
+                        Text(text = "Mark as Finished")
+                    }
                 }
-                Button(onClick = {
-                    viewModel.addToWishlist(book.bookTitle)
-                }) {
-                    Text(text = "Add to Wishlist")
+
+                if (bookState.isInWishlist) {
+                    Button(onClick = {
+                        viewModel.removeFromWishlist(book.bookTitle)
+                    }) {
+                        Text(text = "Remove from Wishlist")
+                    }
+                } else {
+                    Button(onClick = {
+                        viewModel.addToWishlist(book.bookTitle)
+                    }) {
+                        Text(text = "Add to Wishlist")
+                    }
                 }
+
+                if (bookState.isReading) {
+                    Button(onClick = {
+                        viewModel.removeFromReading(book.bookTitle)
+                    }) {
+                        Text(text = "Mark as Not Reading")
+                    }
+                } else {
+                    Button(onClick = {
+                        viewModel.markAsReading(book.bookTitle)
+                    }) {
+                        Text(text = "Mark as Reading")
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(16.dp))
                 Button(onClick = {
-                    viewModel.markAsReading(book.bookTitle)
+                    shareBookDetails(context, book)
                 }) {
-                    Text(text = "Mark as Reading")
+                    Text(text = "Share Book")
                 }
             }
         }
     }
+}
+
+fun shareBookDetails(context: Context, book: BookDetail) {
+    val shareIntent = Intent().apply {
+        action = Intent.ACTION_SEND
+        putExtra(Intent.EXTRA_TEXT, "Check out this book:\n\nTitle: ${book.bookTitle}\nAuthor: ${book.bookAuthor}\nPublisher: ${book.bookPublisher}\nISBN: ${book.bookIsbn}\nRank: ${book.bookRank}\n\n${book.bookDescription}\n\nFind it on Amazon: ${book.amazonBookUrl}")
+        type = "text/plain"
+    }
+    context.startActivity(Intent.createChooser(shareIntent, "Share book via"))
 }
 
 
