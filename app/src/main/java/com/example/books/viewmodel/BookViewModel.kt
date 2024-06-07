@@ -1,6 +1,9 @@
+package com.example.books.viewmodel
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.books.model.BookDetail
+import com.example.books.model.BookState
 import com.example.books.network.BookApiService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -66,9 +69,3 @@ class BookViewModel : ViewModel() {
         _bookStates[bookTitle]?.value = _bookStates[bookTitle]?.value?.copy(isReading = false) ?: BookState()
     }
 }
-
-data class BookState(
-    val isFinished: Boolean = false,
-    val isInWishlist: Boolean = false,
-    val isReading: Boolean = false
-)

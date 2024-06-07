@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.room.common)
+    implementation(libs.books)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -94,4 +95,5 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.5.3")
 
     implementation("androidx.room:room-runtime:2.5.1")
+    implementation("androidx.core:core-ktx:1.7.0")
 }
