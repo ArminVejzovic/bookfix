@@ -22,7 +22,7 @@ fun WishlistBooksScreen(viewModel: BookViewModel, navController: NavHostControll
     val books by viewModel.bookListStateFlow.collectAsState()
     val wishlistBooks = books
         .filter { viewModel.getBookState(it.bookTitle).value.isInWishlist }
-        .distinctBy { it.bookTitle } // Filtriranje jedinstvenih knjiga po naslovu
+        .distinctBy { it.bookTitle }
 
     Scaffold(
         bottomBar = { NasNavigationBar(navController) }

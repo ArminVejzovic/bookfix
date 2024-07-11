@@ -29,8 +29,8 @@ fun NasNavigationBar(navController: NavHostController?) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 NavigationItem(icon = painterResource(id = R.drawable.ic_books), label = "All Books", navController = navController, route = "main")
-                NavigationItem(icon = painterResource(id = R.drawable.ic_finished), label = "Finished Books", navController = navController, route = "finishedBooks")
-                NavigationItem(icon = painterResource(id = R.drawable.ic_wishlist), label = "Wishlist Books", navController = navController, route = "wishlistBooks")
+                NavigationItem(icon = painterResource(id = R.drawable.ic_finished), label = "Finishedlist  Books", navController = navController, route = "finishedBooks")
+                NavigationItem(icon = painterResource(id = R.drawable.ic_wishlist), label = "WishBooks", navController = navController, route = "wishlistBooks")
                 NavigationItem(icon = painterResource(id = R.drawable.ic_reading), label = "Reading Books", navController = navController, route = "readingBooks")
             }
         }
