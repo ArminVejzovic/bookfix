@@ -64,15 +64,15 @@ Only one status can be active at a time, and the active status can be reversed w
 
 7. Navigation Bar
 
-    The navbar allows users to filter their book lists:
+The navbar allows users to filter their book lists:
 
-       All Books: Displays the full list of books.
+   All Books: Displays the full list of books.
 
-       Finished Books: Only shows books that have been marked as finished.
+   Finished Books: Only shows books that have been marked as finished.
 
-       Wishlist Books: Displays books added to the wishlist.
+   Wishlist Books: Displays books added to the wishlist.
 
-       Reading Books: Lists books currently marked as reading.
+   Reading Books: Lists books currently marked as reading.
 
 9. Share Feature
 
