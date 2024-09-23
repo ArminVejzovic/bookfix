@@ -40,15 +40,15 @@ Offline Support: The app handles cases when no internet connection is available
 
     - Amazon Purchase Link: Buy the book directly from the Amazon store using the Buy on Amazon button.
 
-   Below the book details, users can:
+Below the book details, users can:
 
-   - Mark as Finished
+- Mark as Finished
 
-   - Add to Wishlist
+- Add to Wishlist
 
-   - Mark as Reading
+- Mark as Reading
 
-   Only one status can be active at a time, and the active status can be reversed with options like Unfinish Book if it’s marked as finished.
+Only one status can be active at a time, and the active status can be reversed with options like Unfinish Book if it’s marked as finished.
 
 5. Book Status Management
 
