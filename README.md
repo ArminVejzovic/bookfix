@@ -29,16 +29,24 @@ Offline Support: The app handles cases when no internet connection is available
 
     Clicking on a book opens a detailed view showing:
         Book Cover Image
+
         Author
+
         ISBN
+
         Rank
+
         Description
+
         Amazon Purchase Link: Buy the book directly from the Amazon store using the Buy on Amazon button.
 
    Below the book details, users can:
-        Mark as Finished
-        Add to Wishlist
-        Mark as Reading
+
+       Mark as Finished
+
+       Add to Wishlist
+
+       Mark as Reading
 
    Only one status can be active at a time, and the active status can be reversed with options like Unfinish Book if it’s marked as finished.
 
@@ -89,6 +97,7 @@ Sync the Gradle files to install the necessary dependencies.
 Run the app on an emulator or Android device:
 
 - Select an emulator or device from the AVD Manager.
+
 - Press Run (Shift + F10).
 
 
