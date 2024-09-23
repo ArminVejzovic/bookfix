@@ -2,7 +2,7 @@
 
 📚 Bookfix
 
-BookFix is an Android application designed to help users manage their reading journey by tracking books, marking their status, adding them to a wishlist, and sharing them with friends. The app allows users to easily interact with books via features like searching for books, viewing details, and buying them from Amazon. It offers a personalized reading experience with clear navigation and status management for each book.
+Bookfix is an Android application designed to help users manage their reading journey by tracking books, marking their status, adding them to a wishlist, and sharing them with friends. The app allows users to easily interact with books via features like searching for books, viewing details, and buying them from Amazon. It offers a personalized reading experience with clear navigation and status management for each book.
 
 🛠️ Tech Stack
 
