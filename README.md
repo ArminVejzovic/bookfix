@@ -6,12 +6,12 @@ BookFix is an Android application designed to help users manage their reading jo
 
 🛠️ Tech Stack
 
-    UI Development: Jetpack Compose with fully Composable functions to build dynamic and responsive UIs.
-    Architecture: The app follows the MVVM (Model-View-ViewModel) pattern for better state management and clean separation of concerns.
-    Navigation: Utilizes NavHost, NavController, and NavGraph to efficiently handle screen transitions and user flow.
-    Adaptive Layout: Supports different layouts for mobile and tablet devices, following the list-details pattern for larger screens.
-    API Integration: Connects to a book database API using the Retrofit library for fetching book details and keeping the app data up-to-date.
-    Offline Support: The app handles cases when no internet connection is available
+UI Development: Jetpack Compose with fully Composable functions to build dynamic and responsive UIs.
+Architecture: The app follows the MVVM (Model-View-ViewModel) pattern for better state management and clean separation of concerns.
+Navigation: Utilizes NavHost, NavController, and NavGraph to efficiently handle screen transitions and user flow.
+Adaptive Layout: Supports different layouts for mobile and tablet devices, following the list-details pattern for larger screens.
+API Integration: Connects to a book database API using the Retrofit library for fetching book details and keeping the app data up-to-date.
+Offline Support: The app handles cases when no internet connection is available
 
 📱 App Features and Components
 1. Book List
@@ -72,7 +72,7 @@ Sync the Gradle files to install the necessary dependencies.
 
 Run the app on an emulator or Android device:
 
-    Select an emulator or device from the AVD Manager.
-    Press Run (Shift + F10).
+- Select an emulator or device from the AVD Manager.
+- Press Run (Shift + F10).
 
 
