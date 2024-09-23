@@ -42,11 +42,11 @@ Offline Support: The app handles cases when no internet connection is available
 
 Below the book details, users can:
 
-    - Mark as Finished
-    
-    - Add to Wishlist
-    
-    - Mark as Reading
+- Mark as Finished
+
+- Add to Wishlist
+
+- Mark as Reading
 
 Only one status can be active at a time, and the active status can be reversed with options like Unfinish Book if it’s marked as finished.
 
